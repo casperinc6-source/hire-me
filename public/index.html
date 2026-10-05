@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I build & fix web apps — fast</title>
+<style>
+  :root { --navy:#080B16; --cyan:#4FD8FF; --ice:#E8F4FF; --slate:#253549; --ink:#04070D; --dim:#8FA3B8; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--navy); color:var(--ice); font-family:'SF Pro Text',-apple-system,'Segoe UI',sans-serif; line-height:1.55; }
+  .mono { font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace; }
+  .wrap { max-width:880px; margin:0 auto; padding:0 1.4rem; }
+  header { padding:3rem 0 1rem; }
+  .badge { display:inline-block; font-family:var(--mono); font-size:.72rem; letter-spacing:.14em; color:var(--cyan); border:1px solid rgba(79,216,255,.4); border-radius:999px; padding:.3rem .9rem; margin-bottom:1.2rem; }
+  h1 { font-size:clamp(1.9rem,4.5vw,2.9rem); line-height:1.1; letter-spacing:-.02em; max-width:22ch; }
+  h1 b { color:var(--cyan); }
+  .sub { color:var(--dim); max-width:62ch; margin-top:1rem; }
+  section { padding:2.6rem 0 0; }
+  h2 { font-size:1.25rem; margin-bottom:.9rem; }
+  h2 .tag { font-family:var(--mono); font-size:.7rem; letter-spacing:.18em; color:var(--cyan); display:block; margin-bottom:.3rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:.8rem; }
+  .svc { border:1px solid var(--slate); border-radius:14px; padding:1rem 1.1rem; }
+  .svc h3 { font-size:1rem; margin-bottom:.25rem; }
+  .svc .price { color:var(--cyan); font-family:var(--mono); font-weight:700; font-size:.95rem; }
+  .svc p { color:var(--dim); font-size:.85rem; margin-top:.35rem; }
+  .proof { display:flex; flex-wrap:wrap; gap:.6rem; }
+  .proof a { text-decoration:none; color:var(--ice); border:1px solid var(--slate); border-radius:999px; padding:.45rem 1rem; font-size:.85rem; transition:border-color .15s,color .15s; }
+  .proof a:hover { border-color:var(--cyan); color:var(--cyan); }
+  .proof a span { color:var(--cyan); }
+  ol.steps { margin:0.4rem 0 0 1.2rem; color:var(--dim); }
+  ol.steps li { margin:.35rem 0; }
+  ol.steps b { color:var(--ice); }
+  .cta-row { display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.2rem; }
+  .cta { display:inline-block; text-decoration:none; font-weight:700; border-radius:999px; padding:.75rem 1.7rem; }
+  .cta.primary { background:var(--cyan); color:var(--ink); box-shadow:0 0 20px rgba(79,216,255,.35); }
+  .cta.ghost { border:1px solid var(--slate); color:var(--ice); }
+  .cta.ghost:hover { border-color:var(--cyan); color:var(--cyan); }
+  footer { margin-top:3.4rem; padding:1.6rem 0 2.6rem; border-top:1px solid var(--slate); color:var(--dim); font-size:.8rem; }
+  .mono-sm { font-family:var(--mono); font-size:.8rem; }
+  mark { background:rgba(79,216,255,.14); color:var(--cyan); border-radius:6px; padding:.05rem .4rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge mono">AVAILABLE FOR WORK · FAST TURNAROUND</div>
+    <h1>I build small web apps, fix broken sites, and <b>automate boring work.</b></h1>
+    <p class="sub">Solo developer. I ship working software in days, not months — 9 live apps and counting, all built from scratch. If you have a website problem, a spreadsheet problem, or an idea that needs to exist by Friday, I'm your person.</p>
+    <div class="cta-row">
+      <a class="cta primary" href="mailto:YOUR-EMAIL-HERE@example.com?subject=I%20need%20something%20built">Email me the problem</a>
+      <a class="cta ghost" href="https://github.com/casperinc6-source" target="_blank" rel="noopener">See my code ↗</a>
+    </div>
+  </header>
+
+  <section>
+    <h2><span class="tag mono">01 / SERVICES</span>Fixed prices, no surprises</h2>
+    <div class="grid">
+      <div class="svc">
+        <h3>Small website or landing page</h3>
+        <div class="price">from $250</div>
+        <p>One clean, fast, mobile-ready page for your business, event, or product. Live in 2–4 days.</p>
+      </div>
+      <div class="svc">
+        <h3>Website rescue / bug fix</h3>
+        <div class="price">from $75</div>
+        <p>Broken form? Site down? Wonky on phones? Send it — most fixes done same or next day.</p>
+      </div>
+      <div class="svc">
+        <h3>Automation script</h3>
+        <div class="price">from $120</div>
+        <p>Stop copy-pasting between spreadsheets, emails, and folders. I automate the boring parts.</p>
+      </div>
+      <div class="svc">
+        <h3>Small web app / internal tool</h3>
+        <div class="price">from $450</div>
+        <p>Booking, tracking, dashboards, data entry tools. Real software, no subscription bloat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="tag mono">02 / PROOF</span>Live things I've built (click them)</h2>
+    <div class="proof">
+      <a href="https://casperinc6-source.github.io/jarvis-landing/" target="_blank" rel="noopener">Voice-assistant landing page <span>↗</span></a>
+      <a href="https://casperinc6-source.github.io/claim-finder/" target="_blank" rel="noopener">Unclaimed-money finder <span>↗</span></a>
+      <a href="https://github.com/casperinc6-source" target="_blank" rel="noopener">9 apps, all source open <span>↗</span></a>
+    </div>
+    <p class="sub" style="margin-top:.8rem">Every link above is real, running software — not a mockup. <span class="mono-sm">Zero dependencies, built and deployed solo.</span></p>
+  </section>
+
+  <section>
+    <h2><span class="tag mono">03 / HOW IT WORKS</span>Simple and boring, on purpose</h2>
+    <ol class="steps">
+      <li><b>You email me the problem</b> — one paragraph is enough, screenshots help.</li>
+      <li><b>I reply within a few hours</b> with a fixed price and a delivery date.</li>
+      <li><b>Half up front</b> (PayPal / Venmo / card), half when you're happy with it.</li>
+      <li><b>Delivery in 2–5 days</b>, one round of changes included.</li>
+    </ol>
+    <p class="sub" style="margin-top:.8rem">Small budgets welcome. If I can't help, I'll say so and point you to someone who can — no hard feelings, no hard sell.</p>
+  </section>
+
+  <section>
+    <h2><span class="tag mono">04 / CONTACT</span>Fastest way: email</h2>
+    <p class="sub">Put the gist in the subject line — <mark class="mono-sm">my site is broken</mark> or <mark class="mono-sm">need a landing page by Friday</mark> — and I'll get back to you today.</p>
+    <div class="cta-row">
+      <a class="cta primary" href="mailto:YOUR-EMAIL-HERE@example.com">YOUR-EMAIL-HERE@example.com</a>
+      <a class="cta ghost" href="https://github.com/casperinc6-source" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="mono-sm">REAL PERSON · REAL CODE · NO AGENCY MIDDLEMEN</span>
+  </footer>
+</div>
+</body>
+</html>
